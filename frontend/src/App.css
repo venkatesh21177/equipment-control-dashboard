@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+
+.header {
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  padding: 30px;
+  text-align: center;
+  color: #020617;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+.dashboard {
+  max-width: 1200px;
+  margin: -40px auto 40px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+}
+
+
+.panel {
+  background: #020617;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+.form-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.form-grid {
+  display: grid;
+  gap: 14px;
+}
+
+input,
+select {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 12px;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #22d3ee;
+}
+
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: #020617;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-secondary {
+  background: #334155;
+  color: #e5e7eb;
+}
+
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+thead th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  padding: 8px 12px;
+}
+
+tbody tr {
+  background: #020617;
+  border-radius: 14px;
+}
+
+tbody td {
+  padding: 14px 12px;
+}
+
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.active {
+  background: #22c55e;
+  color: #020617;
+}
+
+.badge.inactive {
+  background: #64748b;
+  color: white;
+}
+
+.badge.maintenance {
+  background: #f59e0b;
+  color: #020617;
+}
+
+
+.actions button {
+  margin-right: 8px;
+}
